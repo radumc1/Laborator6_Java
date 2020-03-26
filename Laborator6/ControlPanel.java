@@ -56,6 +56,7 @@ public class ControlPanel extends JPanel {
         try {
             BufferedImage originalImage = ImageIO.read(new File("e:/test.png"));
             frame.canvas.graphics.drawImage(originalImage,0,0,this);
+            frame.repaint();
         } catch (IOException ex) { System.err.println(ex); }
     }
         
